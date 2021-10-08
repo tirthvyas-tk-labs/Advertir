@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleLight"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/storyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onboard1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/storyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/welcome_to_sarscovid_text"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/storyMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sarscovid_notifies_you"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_indicator_ll"
+        layout="@layout/layout_indicator" />
+
+
+</LinearLayout>
