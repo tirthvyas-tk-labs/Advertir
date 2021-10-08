@@ -16,16 +16,6 @@
         app:layout_constraintStart_toStartOf="@+id/guidelineV30"
         app:layout_constraintTop_toTopOf="@+id/guidelineH10" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/uwbanner"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV80"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV20"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH70" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineV20"
         android:layout_width="wrap_content"
