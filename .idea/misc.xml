@@ -8,6 +8,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Project/AndroidStudioProjects/Adverstir-App/app/src/main/res/layout/splash.xml" value="0.10916919959473151" />
         <entry key="app/src/main/res/layout/card_broadcast.xml" value="0.38405797101449274" />
         <entry key="app/src/main/res/layout/card_privacy_disclaimer.xml" value="0.18161094224924013" />
         <entry key="app/src/main/res/layout/card_symptom_reminder.xml" value="0.18161094224924013" />
