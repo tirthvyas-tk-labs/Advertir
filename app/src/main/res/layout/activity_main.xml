@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context="edu.uw.covidsafe.ui.MainActivity">
+    tools:context="com.project.adverstir.ui.MainActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -36,11 +36,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:labelVisibilityMode="labeled"
+        android:background="#FFFFFF"
         android:clickable="false"
-        app:menu="@menu/bottom_nav_menu_release"
         android:contextClickable="false"
-        app:itemBackground="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu_release" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

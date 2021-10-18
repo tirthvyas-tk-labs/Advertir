@@ -4,14 +4,14 @@
 <!--    <color name="colorPrimaryDark">#2e5684</color>-->
 <!--    <color name="colorAccent">#2e5684</color>-->
     <color name="purplePale">#f6f1ff</color>
-    <color name="purpleLight">#8d55e9</color>
-    <color name="purpleDark">#4b2e83</color>
+    <color name="purpleLight">#EB5757</color>
+    <color name="purpleDark">#000000</color>
 
     <color name="orange">#fff2c8</color>
     <color name="orange2">#f5c53d</color>
     <color name="orange3">#745300</color>
     <color name="orange4">#fff2c8</color>
-    <color name="white">#ffffff</color>
+    <color name="white">#FFFFFF</color>
     <color name="warningViolet">#e3008c</color>
     <color name="black">#000000</color>
     <color name="gray">#f8f8f8</color>

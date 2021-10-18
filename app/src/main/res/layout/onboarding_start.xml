@@ -10,22 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.7"
-        android:background="@drawable/onboard5"
+        android:background="@drawable/new_on5"
         android:gravity="bottom"
         android:orientation="vertical">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/privacy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="20dp"
-            android:text="@string/learn_how_we_protect_your_privacy"
-            android:textAllCaps="false"
-            android:textSize="12sp"
-            app:cornerRadius="20dp"
-            app:icon="@drawable/ic_lock_black_24dp" />
+
 
     </LinearLayout>
 
@@ -53,7 +42,7 @@
             android:id="@+id/onboardingGetStartedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/white"
             android:text="@string/get_started_text"
             android:textColor="@color/purpleLight" />
