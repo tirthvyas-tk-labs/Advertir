@@ -24,7 +24,7 @@
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/drawable/ic_warning_black_24dp.xml" value="0.240625" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/drawable/startbutton.xml" value="0.240625" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/drawable/stopbutton.xml" value="0.240625" />
-        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/activity_onboarding.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/add_symptoms_fragment.xml" value="0.22" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_action.xml" value="0.21331521739130435" />
@@ -46,7 +46,7 @@
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_resource.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_spinner_setting.xml" value="0.25" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_symptom_log_recent.xml" value="0.21965579710144928" />
-        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_symptom_reminder.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_symptom_reminder.xml" value="0.33" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_tracer_interview.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/card_upload.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/checkbox.xml" value="0.21331521739130435" />
@@ -57,7 +57,7 @@
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/faq_answer.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/faq_question.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/faq_row.xml" value="0.21965579710144928" />
-        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_contact_log.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_contact_log.xml" value="0.2592137592137592" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_faq.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_history.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_import.xml" value="0.25" />
@@ -68,7 +68,7 @@
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_settings.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/fragment_symptom_confirmation.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/gps_history_log.xml" value="0.21965579710144928" />
-        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/health_diagnosis.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/health_diagnosis.xml" value="0.25" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/health_diagnosis_old.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/health_main.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/health_main_old.xml" value="0.21331521739130435" />
@@ -88,7 +88,8 @@
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/symptom_confirm_card.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/symptom_list_layout.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/layout/symptom_summary_card.xml" value="0.21331521739130435" />
-        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/menu/bottom_nav_menu_release.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/menu-v26/bottom_nav_menu_release.xml" value="0.5" />
+        <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/menu/bottom_nav_menu_release.xml" value="0.25" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/menu/mymenu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Project/Desktop/Adverstir/app/src/main/res/menu/overflow_menu.xml" value="0.22447916666666667" />
         <entry key="app/src/main/res/layout/card_broadcast.xml" value="0.38405797101449274" />

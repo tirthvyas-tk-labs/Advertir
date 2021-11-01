@@ -3,17 +3,17 @@
     <string name="main_header_text">Adverstir Care</string>
     <string name="app_name_one_line">Adverstir Care</string>
     <string name="history_header_text">History</string>
-    <string name="permissions_header_text"><![CDATA[<font color=#000000>Select your preferences</font>]]></string>
-    <string name="health_header_text"><![CDATA[<font color=#000000>Health</font>]]></string>
-    <string name="health_header_text_demo"><![CDATA[<font color=#000000>Health [DEMO]</font>]]></string>
+    <string name="permissions_header_text"><![CDATA[<font color=#000000>Exposure notification settings</font>]]></string>
+    <string name="health_header_text"><![CDATA[<font color=#000000>COVID</font>]]></string>
+    <string name="health_header_text_demo"><![CDATA[<font color=#000000>COVID [DEMO]</font>]]></string>
     <string name="contact_header_text"><![CDATA[<font color=#000000>Interview Preparation</font>]]></string>
     <string name="contact_header_text_demo"><![CDATA[<font color=#000000>Interview Preparation [DEMO]</font>]]></string>
     <string name="add_symptoms_header_text"><![CDATA[<font color=#000000>Create New Log</font>]]></string>
     <string name="settings_header_text"><![CDATA[<font color=#000000>Settings</font>]]></string>
     <string name="help_header_text"><![CDATA[<font color=#000000>Resources</font>]]></string>
     <string name="help_header_text_demo"><![CDATA[<font color=#000000>Resources [DEMO]</font>]]></string>
-    <string name="contact_log_header_text"><![CDATA[<font color=#000000>Contact Log</font>]]></string>
-    <string name="contact_log_header_text_demo"><![CDATA[<font color=#000000>Contact Log [DEMO]</font>]]></string>
+    <string name="contact_log_header_text"><![CDATA[<font color=#000000>Location Logs</font>]]></string>
+    <string name="contact_log_header_text_demo"><![CDATA[<font color=#000000>Location Logs [DEMO]</font>]]></string>
     <string name="warning_header_text"><![CDATA[<font color=#000000>Diagnosis Report</font>]]></string>
     <string name="symptom_help_text">Use this form to provide a daily report of any symptoms you have. You may submit this form once a day.</string>
     <string name="warning_help_text">You\'ve received a positive diagnosis from your healthcare provider. To confirm your diagnosis, please provider your credentials below.</string>
@@ -200,8 +200,8 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="download_complete">Download complete!</string>
     <string name="last_submitted">Last submitted</string>
     <string name="phone">911</string>
-    <string name="privacyDisclaimer">Any information collected is stored securely and locally in your app, and remain private to you.</string>
-    <string name="privacyDisclaimer2">This information is stored securely and locally on your app, and remains private to you.</string>
+    <string name="privacyDisclaimer">Adverstir stores your information securely and locally in your app, and remain private to you.</string>
+    <string name="privacyDisclaimer2">Adverstir stores your information securely and locally on your app, and remains private to you.</string>
     <string name="perm_gps_rationale">Without this permission, we will be unable to capture location information. Are you sure you want to deny this permission?</string>
     <string name="perm_gps_ask">We require access to location information when the app is closed. Would you like to open app settings to enable this?</string>
     <string name="perm_write_ask">We require access to location information to import your history. Would you like to open app settings to enable this?</string>
@@ -279,7 +279,7 @@ Contact tracing is a process that helps identify all the people who may have com
         Learn more
     </string>
     <string name="permissionsHeader">
-        Enable real-time notifications to get alerts about potential exposures and public health messages relevant to you.\n\nAdverstir Care reveals no information about you without your consent.
+        Enable real-time notifications to get alerts about potential exposures.\n\nAdverstir Care reveals no information about you without your consent.
     </string>
 
     <string name="cancel">Cancel</string>
@@ -313,13 +313,13 @@ Contact tracing is a process that helps identify all the people who may have com
         Welcome to Adverstir Care
     </string>
     <string name="storyTitle2">
-        Exposure Notifications
+        Get Exposure Notifications
     </string>
     <string name="storyTitle3">
-        Self-Care Tips
+        Health Tips
     </string>
     <string name="storyTitle4">
-        Your Privacy
+         Privacy Enabled
     </string>
 
     <string name="sure_delete">Are you sure you want to delete?</string>
@@ -338,7 +338,7 @@ Contact tracing is a process that helps identify all the people who may have com
         Any information you contribute is protected. Learn more about how your information is used and protected on the Privacy page in Settings.
     </string>
     <string name="startText">
-        Let\'s slow the spread of COVID-19 together.
+        Let\'s work together to stop the spread of COVID-19 !
     </string>
 
     <string name="emergency_text" comment="This is the emergency text that needs to be shown to the user in the symptom tab">
@@ -356,7 +356,7 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="persistent_pain_or_pressure_in_chest">Persistent pain or pressure in the chest</string>
     <string name="new_confusion_inability_to_arouse">New confusion or inability to arouse</string>
     <string name="bluish_lips_or_face">Bluish lips or face</string>
-    <string name="certText">I certify that the information submitted in this report is true and correct to the best of my knowledge.</string>
+    <string name="certText">I confirm that the information submitted in this report is true and correct to the best of my knowledge.</string>
     <string name="certDiagnosisText">I certify that I have been officially diagnosed with COVID-19</string>
 
 
@@ -369,7 +369,7 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="learn_more_link_text" comment="This is a button link which when clicked will take the user to the online resources">Learn More</string>
     <string name="settings_text" comment="This is the button for taking the users to the settings">Settings</string>
     <string name="broadcasting_on_text" comment="This is the text shown for broadcasting on">Broadcasting</string>
-    <string name="broadcasting_off_text">Broadcasting off</string>
+    <string name="broadcasting_off_text">Broadcasting is Off</string>
     <string name="broadcasting_description_text" comment="This is the broadcasting text that needs to be show to the user">Adverstir Care uses unique user id for each user for tracing, no personal information is exchanged or collected.</string>
 
     <string name="emergency_call_text" comment="This is the emergency text that needs to be shown to the user on call tab">Call 911 immediately if you are having a medical emergency.</string>
@@ -402,9 +402,9 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="dismiss_text">Dismiss</string>
     <string name="disclaimer_text">Disclaimer</string>
     <string name="cdc_guidance_text" comment="button string for taking the user to the CDC guidance">CDC Guidance</string>
-    <string name="symptom_tracker_text" comment="symptom tracker text">Symptom Tracker [DEMO]</string>
-    <string name="time_am">AM</string>
-    <string name="time_pm">PM</string>
+    <string name="symptom_tracker_text" comment="symptom tracker text">Track COVID Symptoms</string>
+    <string name="time_am">Morning</string>
+    <string name="time_pm">Evening</string>
     <string name="saved_text">Saved</string>
     <string name="not_logged_text">Not Logged</string>
     <string name="prepare_for_contact_tracer_interview">Prepare for your contact tracer interview</string>
@@ -412,8 +412,8 @@ Contact tracing is a process that helps identify all the people who may have com
     <string name="prepare_for_contact_tracer_description_text">During an interview, a public health official will collect a list of critical information to help identify those around you who may have been exposed.</string>
     <string name="positive_covid_report" comment="text to be shown to user when they want to report that they were tested positive">Positive COVID-19 Diagnosis Reported</string>
     <string name="reported_text">Reported</string>
-    <string name="submit_your_report_button_text">Submit your report</string>
-    <string name="what_happen_when_i_submit_report">What happens when I submit my report?</string>
+    <string name="submit_your_report_button_text">I have been tested COVID positive</string>
+    <string name="what_happen_when_i_submit_report">What happens when I submit it?</string>
     <string name="symptoms_text">Symptoms</string>
     <string name="location_text">Location</string>
     <string name="locations_text">Locations</string>
@@ -451,7 +451,7 @@ You can prepare a list of informaton they will ask about based on information co
     <string name="symptoms_experienced_last_14_days">Symptoms you’ve experienced in the last 14 days</string>
     <string name="location_visited_in_last_14_days">Locations you’ve visited in the last 14 days</string>
     <string name="people_you_have_been_in_contact_last_14_days">People you’ve been in direct contact with over the last 14 days</string>
-    <string name="get_started_text">Get started</string>
+    <string name="get_started_text">Explore</string>
     <string name="frequently_asked_questions">Frequently Asked Questions</string>
     <string name="about_sarscovid">About Adverstir Care</string>
     <string name="privacy_and_security">Privacy and Security</string>
@@ -500,10 +500,11 @@ You can prepare a list of informaton they will ask about based on information co
     <string name="check_box">Please check the box to confirm this information is accurate.</string>
     <string name="network_down">Network not available. Please try again.</string>
     <string name="demo_disabled">This function is disabled in the demo version of the app.</string>
+    <string name="nothing_here" translatable="false"></string>
 
     <string name="quarantine_desc">Everyone with COVID-19 symptoms who has a test result pending shall remain in quarantine while waiting for the test results.</string>
-    <string name="monitor_your_symptoms">Monitor Your Symptoms</string>
-    <string name="isolation_order">Isolation order</string>
+    <string name="monitor_your_symptoms">Make sure you monitor your symptoms..</string>
+    <string name="isolation_order">If you have been tested positive isolate yourself!</string>
     <string name="request_test">Request a test</string>
     <string name="quarantine_directive">Quarantine directive</string>
     <string name="call_911">Call 911 immediately if you are having a medical emergency.</string>

@@ -7,8 +7,10 @@
         android:enabled="true"
         android:icon="@drawable/nav1"
         android:title="@string/bottom_sheet_menu_item_home"
+        android:iconTint="#FFFFFF"
         android:tint="#FFFFFF"
         app:showAsAction="always|withText" />
+
 
     <item
         android:id="@+id/action_report"
@@ -26,7 +28,6 @@
         android:iconTint="#FFFFFF"
         android:tint="#FFFFFF"
         app:showAsAction="always|withText" />
-
 
 
 

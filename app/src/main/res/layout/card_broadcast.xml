@@ -124,7 +124,7 @@
                 android:gravity="center"
                 android:text="@string/broadcasting_on_text"
                 android:textColor="@color/black"
-                android:textSize="34sp"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toTopOf="@+id/broadcastProp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

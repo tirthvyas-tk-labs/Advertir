@@ -19,11 +19,6 @@
             android:layout_height="match_parent"
             android:text="@string/locations_text" />
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/peopleTab"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/people_text" />
 
     </com.google.android.material.tabs.TabLayout>
 

@@ -73,7 +73,7 @@ public class PermissionFragment extends Fragment {
         });
 
         TextView privacy = view.findViewById(R.id.privacyText);
-        Utils.linkify(privacy,getString(R.string.privacyLink1));
+        //Utils.linkify(privacy,getString(R.string.privacyLink1));
 
         return view;
     }

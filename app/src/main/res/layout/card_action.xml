@@ -47,7 +47,7 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/icon_quarantine"
+                android:src="@drawable/mcv_action_next"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineV10"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -90,6 +90,7 @@
                 android:layout_marginStart="18dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/learn_more_link_text"
+                android:visibility="invisible"
                 android:textColor="@color/purpleLight"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"

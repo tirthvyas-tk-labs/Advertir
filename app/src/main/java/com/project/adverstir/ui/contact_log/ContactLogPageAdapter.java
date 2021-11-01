@@ -25,6 +25,7 @@ public class ContactLogPageAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return Constants.LocationFragment;
         }
+
         else if (position == 1) {
             return Constants.PeopleFragment;
         }
@@ -33,7 +34,7 @@ public class ContactLogPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 1;
     }
 
     @Nullable
@@ -42,9 +43,11 @@ public class ContactLogPageAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return cxt.getString(R.string.locations_text);
         }
+        /**
         else if (position == 1) {
             return cxt.getString(R.string.people_text);
         }
+         **/
         return "";
     }
 }

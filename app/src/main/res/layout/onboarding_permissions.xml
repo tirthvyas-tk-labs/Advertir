@@ -31,6 +31,7 @@
             android:textColor="@color/purpleLight"
             android:textSize="15sp"
             android:textStyle="bold"
+            android:visibility="invisible"
             app:layout_constraintEnd_toStartOf="@+id/guidelineV95"
             app:layout_constraintStart_toStartOf="@+id/guidelineV5"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />

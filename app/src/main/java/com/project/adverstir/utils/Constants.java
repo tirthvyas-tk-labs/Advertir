@@ -42,7 +42,7 @@ import com.project.adverstir.ui.MainFragment;
 import com.project.adverstir.ui.contact_log.ContactLogFragment;
 import com.project.adverstir.ui.contact_log.LocationFragment;
 import com.project.adverstir.ui.contact_log.PeopleFragment;
-import com.project.adverstir.ui.faq.FaqFragment;
+//import com.project.adverstir.ui.faq.FaqFragment;
 import com.project.adverstir.ui.health.DiagnosisFragment;
 import com.project.adverstir.ui.health.HealthFragment;
 import com.project.adverstir.ui.health.TipRecyclerViewAdapter;
@@ -329,7 +329,7 @@ public class Constants {
         DiagnosisFragment = new DiagnosisFragment();
         HealthFragment = new HealthFragment();
 
-        FaqFragment = new FaqFragment();
+        //FaqFragment = new FaqFragment();
 
         PermissionsFragment = new PermissionFragment();
         PagerFragment = new PagerFragment();

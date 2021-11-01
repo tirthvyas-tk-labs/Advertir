@@ -150,10 +150,10 @@ public class DiagnosisFragment extends Fragment {
                 public void onClick(View v) {
                     AlertDialog dialog = new MaterialAlertDialogBuilder(getActivity())
                             .setMessage(getString(R.string.confirm_diagnosis))
-                            .setNegativeButton(getString(R.string.privacyText), new DialogInterface.OnClickListener() {
+                            .setNegativeButton(getString(R.string.nothing_here), new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.covidSiteLink)));
+                                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
                                     startActivity(browserIntent);
                                 }
                             })

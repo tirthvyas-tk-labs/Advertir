@@ -1,5 +1,6 @@
 package com.project.adverstir.ui.health;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -68,16 +69,16 @@ public class TipRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.Vi
                 Spannable ss = (Spannable)Html.fromHtml(
                         mContext.getString(R.string.isolation1)+" <b>"+mContext.getString(R.string.isolation2)+"</b>");
                 desc.add(ss);
-                icons.add(mContext.getDrawable(R.drawable.icon_quarantine));
-                links.add("https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus/quarantine.aspx");
+                icons.add(mContext.getDrawable(R.drawable.mcv_action_next));
+                links.add("");
 
                 titles.add(mContext.getString(R.string.monitor_your_symptoms));
                 Spannable ss2 = (Spannable)Html.fromHtml(
                         mContext.getString(R.string.monitor1)+" <b>"+mContext.getString(R.string.monitor2)+"</b> "+mContext.getString(R.string.monitor3)
                 );
                 desc.add(ss2);
-                icons.add(mContext.getDrawable(R.drawable.icon_symptoms));
-                links.add("https://kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus/FAQ.aspx");
+                icons.add(mContext.getDrawable(R.drawable.mcv_action_next));
+                links.add("");
             }
             else {
                 // for the exposed
@@ -180,7 +181,7 @@ public class TipRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         if (titles.get(position).isEmpty()) {
             ((CallCard) holder).desc.setText((String)desc.get(position));
             ((CallCard)holder).icon.setImageDrawable(icons.get(position));

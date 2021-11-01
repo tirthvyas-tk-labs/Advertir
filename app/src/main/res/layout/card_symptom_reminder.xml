@@ -31,6 +31,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:background="@color/black"
             android:layout_height="match_parent">
 
             <TextView
@@ -40,7 +41,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
                 android:text="@string/symptom_tracker_text"
-                android:textColor="@color/black"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineV85"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -54,7 +55,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical"
                 android:text="Wednesday, April 15th"
-                android:textColor="@color/darkGray"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineV85"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -89,7 +90,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
                 android:text="@string/time_am"
-                android:textColor="@color/black"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/amImage"
                 app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -102,7 +103,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical"
                 android:text="Saved 8:03am"
-                android:textColor="@color/darkGray"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/amImage"
                 app:layout_constraintTop_toBottomOf="@+id/am" />
@@ -111,7 +112,8 @@
                 android:id="@+id/amAction"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@color/white"
+                android:background="@color/black"
+                android:tint="#FFFFFF"
                 android:src="@drawable/ic_more_vert_gray_24dp"
                 app:layout_constraintBottom_toTopOf="@+id/view2"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineV85"
@@ -123,7 +125,7 @@
                 android:layout_width="0dp"
                 android:layout_height="1dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/gray"
+                android:background="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineV85"
                 app:layout_constraintStart_toStartOf="@+id/amStatus"
                 app:layout_constraintTop_toBottomOf="@+id/amStatus" />
@@ -146,7 +148,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
                 android:text="@string/time_pm"
-                android:textColor="@color/black"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/pmImage"
                 app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -160,7 +162,7 @@
                 android:layout_marginBottom="15dp"
                 android:gravity="center_vertical"
                 android:text="@string/not_logged_text"
-                android:textColor="@color/darkGray"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/pmImage"
@@ -170,7 +172,8 @@
                 android:id="@+id/pmAction"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@color/white"
+                android:background="@color/black"
+                android:tint="#FFFFFF"
                 android:src="@drawable/ic_add_gray_24dp"
                 app:layout_constraintBottom_toBottomOf="@+id/pmStatus"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineV85"

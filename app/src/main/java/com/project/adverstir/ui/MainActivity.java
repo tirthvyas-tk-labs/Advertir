@@ -276,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
         menu.findItem(R.id.mybutton).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                menu.findItem(R.id.mybutton).setIcon(R.drawable.calendar_highlighted);
+                menu.findItem(R.id.mybutton).setIcon(R.drawable.calendar);
                 calSetup();
                 return false;
             }
@@ -460,9 +460,9 @@ public class MainActivity extends AppCompatActivity {
                             return true;
                         }
                         break;
-                    case R.id.action_settings:
-                        selectedFragment = Constants.FaqFragment;
-                        break;
+                    //case R.id.action_settings:
+                        //selectedFragment = Constants.FaqFragment;
+                        //break;
                 }
 
                 if (selectedFragment != null) {
