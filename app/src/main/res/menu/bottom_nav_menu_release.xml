@@ -7,27 +7,27 @@
         android:enabled="true"
         android:icon="@drawable/nav1"
         android:title="@string/bottom_sheet_menu_item_home"
+        android:tint="#FFFFFF"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_report"
+        android:enabled="true"
+        android:icon="@drawable/nav21"
+        android:title="COVID Report"
+        android:tint="#FFFFFF"
         app:showAsAction="always|withText" />
 
     <item
         android:id="@+id/action_contact_log"
         android:enabled="true"
         android:icon="@drawable/contact"
-        android:title="@string/bottom_sheet_menu_item_contact_log"
+        android:title="Locations"
+        android:iconTint="#FFFFFF"
+        android:tint="#FFFFFF"
         app:showAsAction="always|withText" />
 
-    <item
-        android:id="@+id/action_report"
-        android:enabled="true"
-        android:icon="@drawable/nav2"
-        android:title="@string/bottom_sheet_menu_item_health_report"
-        app:showAsAction="always|withText" />
 
-    <item
-        android:id="@+id/action_settings"
-        android:enabled="true"
-        android:icon="@drawable/nav3"
-        android:title="@string/bottom_sheet_menu_item_resources"
-        app:showAsAction="always|withText" />
+
 
 </menu>

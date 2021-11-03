@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_nav_menu">
+    <item
+        android:id="@+id/action_track"
+        android:enabled="true"
+        android:icon="@drawable/nav1"
+        android:title="@string/bottom_sheet_menu_item_home"
+        android:iconTint="#FFFFFF"
+        android:tint="#FFFFFF"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/action_report"
+        android:enabled="true"
+        android:icon="@drawable/nav21"
+        android:title="COVID Report"
+        android:tint="#FFFFFF"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_contact_log"
+        android:enabled="true"
+        android:icon="@drawable/contact"
+        android:title="Locations"
+        android:iconTint="#FFFFFF"
+        android:tint="#FFFFFF"
+        app:showAsAction="always|withText" />
+
+
+
+</menu>

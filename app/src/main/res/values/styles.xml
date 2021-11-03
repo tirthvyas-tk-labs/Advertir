@@ -15,8 +15,8 @@
     </style>
 
     <style name="MyCustomPickerTheme" parent="MultiContactPicker.Azure">
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="mcpToolbarTheme">@style/MyCustomToolbarTheme</item>
         <item name="mcpListPopupWindowStyleTheme">@style/MyCustomToolbarTheme</item>
     </style>

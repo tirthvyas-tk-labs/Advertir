@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context="edu.uw.covidsafe.ui.MainActivity">
+    tools:context="com.project.adverstir.ui.MainActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -29,6 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/shadows" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -36,11 +37,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:labelVisibilityMode="labeled"
+        android:background="#000000"
         android:clickable="false"
-        app:menu="@menu/bottom_nav_menu_release"
         android:contextClickable="false"
-        app:itemBackground="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu_release"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="@color/white"
+        tools:layout_editor_absoluteX="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

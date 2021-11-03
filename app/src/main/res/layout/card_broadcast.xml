@@ -2,22 +2,23 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white">
+    android:background="#DAF1FDF0">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:text="@string/app_name_one_line"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/xall"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV205"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -28,7 +29,6 @@
         android:contentDescription="@string/settings_text"
         android:minWidth="30dp"
         android:minHeight="30dp"
-        android:src="@drawable/ic_delete_black_24dp"
         app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintEnd_toStartOf="@+id/refresh"
         app:layout_constraintTop_toTopOf="@+id/title"
@@ -58,109 +58,93 @@
         app:layout_constraintEnd_toStartOf="@+id/guidelineV95"
         app:layout_constraintTop_toTopOf="@+id/title" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/logo_purple"
-        app:layout_constraintBottom_toBottomOf="@+id/title"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV205"
-        app:layout_constraintTop_toTopOf="@+id/title" />
-
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/purplePale"
+        android:backgroundTint="#DAF1FDF0"
         android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV95"
         app:layout_constraintStart_toStartOf="@+id/guidelineV205"
         app:layout_constraintTop_toBottomOf="@id/title"
-        app:strokeColor="@color/gray3"
-        app:strokeWidth="1dp">
+        app:strokeColor="@color/black"
+        app:strokeWidth="5dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="580dp">
+
+            <ImageView
+                android:id="@+id/powerButton"
+                android:layout_width="108dp"
+                android:layout_height="97dp"
+                android:minWidth="44dp"
+                android:minHeight="44dp"
+
+                android:src="@drawable/black_switch1"
+                app:layout_constraintBottom_toTopOf="@+id/broadcastTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ring"
+                android:layout_width="108dp"
+                android:layout_height="97dp"
+                android:minWidth="44dp"
+                android:minHeight="44dp"
+                android:alpha="0"
+                android:src="@drawable/ring"
+                android:tint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/broadcastTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:layout_width="263dp"
+                android:layout_height="281dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toTopOf="@+id/broadcastProp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/broadcastTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginBottom="55dp"
+                android:gravity="center"
                 android:text="@string/broadcasting_on_text"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineV80"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/broadcastProp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/broadcastProp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+
                 android:text="@string/broadcasting_description_text"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineV80"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/broadcastTitle" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineV05"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.048648648" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineV10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="20dp"
-                app:layout_constraintGuide_percent=".13" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineV80"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="20dp"
-                app:layout_constraintGuide_percent=".70" />
-
-            <ImageView
-                android:id="@+id/powerButton"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:minWidth="44dp"
-                android:minHeight="44dp"
-                android:src="@drawable/switch_on_noring"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guidelineV80"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent" />
 
-            <ImageView
-                android:id="@+id/ring"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:alpha="0"
-                android:minWidth="44dp"
-                android:minHeight="44dp"
-                android:src="@drawable/ring"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guidelineV80"
-                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

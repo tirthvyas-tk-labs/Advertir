@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covidsafe">
+    package="com.example.adverstir">
 
     <uses-sdk android:targetSdkVersion="29" />
 
@@ -27,7 +27,7 @@
         android:required="true" />
 
     <application
-        android:name="edu.uw.covidsafe.CovidSafeApplication"
+        android:name="com.project.adverstir.CovidSafeApplication"
         android:allowBackup="true"
         android:fullBackupContent="@xml/appcenter_backup_rule"
         android:icon="@drawable/logo_purple"
@@ -39,7 +39,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="edu.uw.covidsafe.ui.Splash"
+            android:name="com.project.adverstir.ui.onboarding.OnboardingActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -49,19 +49,18 @@
         </activity>
 
         <activity
-            android:name="edu.uw.covidsafe.ui.MainActivity"
+            android:name="com.project.adverstir.ui.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name="edu.uw.covidsafe.ui.onboarding.OnboardingActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
 
-        <service android:name="edu.uw.covidsafe.service.LoggingService" />
+
+
+        <service android:name="com.project.adverstir.service.LoggingService" />
 
         <receiver
-            android:name="edu.uw.covidsafe.broadcastreceivers.AutoStartWorkReceiver"
+            android:name="com.project.adverstir.broadcastreceivers.AutoStartWorkReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
