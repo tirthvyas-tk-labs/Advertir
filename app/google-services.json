@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "102597978082",
+    "firebase_url": "https://travelmate-589d3-default-rtdb.firebaseio.com",
+    "project_id": "travelmate-589d3",
+    "storage_bucket": "travelmate-589d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102597978082:android:f8d4f1c085c9a71ea83bbb",
+        "android_client_info": {
+          "package_name": "com.project.adverstir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102597978082-537p5lbbk57vf627mqlis8ebi3agk3g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQzKdWlj1TmUQs5TqG4A-nAJNvI108-xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102597978082-537p5lbbk57vf627mqlis8ebi3agk3g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102597978082:android:706ec7bbe7d875cda83bbb",
+        "android_client_info": {
+          "package_name": "com.travel.travelmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102597978082-3inntgoqr3bmcdb5gr9hs2f48mappe8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.travel.travelmate",
+            "certificate_hash": "b783aa64b727aafe638d082b6ba0f63c9be49423"
+          }
+        },
+        {
+          "client_id": "102597978082-6ns8pg7fk997ok4ns330jkqteaielrpj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.travel.travelmate",
+            "certificate_hash": "a234624e72183b513f5ebb97a7e65eee93ea75c2"
+          }
+        },
+        {
+          "client_id": "102597978082-i9tpqncp1tobbovoh28af2icg7dk508v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.travel.travelmate",
+            "certificate_hash": "cad645c5ffb83b294f00a1dd55006796188c4f88"
+          }
+        },
+        {
+          "client_id": "102597978082-537p5lbbk57vf627mqlis8ebi3agk3g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQzKdWlj1TmUQs5TqG4A-nAJNvI108-xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102597978082-537p5lbbk57vf627mqlis8ebi3agk3g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
