@@ -1,3 +1,3 @@
-# Adverstir-App
+# Advertir-App
 # COVID STUFF!!!!
 
