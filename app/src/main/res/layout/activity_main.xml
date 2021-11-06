@@ -12,9 +12,10 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_marginBottom="58dp"
         android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="58dp"
         app:layout_constraintBottom_toTopOf="@+id/colorBar"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
@@ -46,5 +47,17 @@
         app:itemIconTint="#FFFFFF"
         app:itemTextColor="@color/white"
         tools:layout_editor_absoluteX="0dp"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        app:icon="@drawable/ic_arrow_back_black_24dp"
+        app:iconGravity="textStart"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

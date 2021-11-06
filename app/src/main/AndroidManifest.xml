@@ -36,6 +36,41 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
+
+
+        <activity
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:name="com.project.adverstir.CovidActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.adverstir.LocationDescriptionActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name="com.project.adverstir.OnBoarding"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.project.adverstir.LoginActivity" />
+        <activity android:name="com.project.adverstir.SignUpActivity" />
+        <activity android:name="com.project.adverstir.ForgotActivity" />
+
+        <activity
+            android:name="com.project.adverstir.Travel_MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.project.adverstir.ProfileActivity" />
+
+
+
+
         <activity
             android:name="com.project.adverstir.ui.onboarding.OnboardingActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

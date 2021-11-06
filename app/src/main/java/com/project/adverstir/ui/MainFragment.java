@@ -4,6 +4,7 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
@@ -43,6 +45,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
+import com.project.adverstir.Travel_MainActivity;
 import com.project.adverstir.comms.PullFromServerTaskDemo2;
 import com.project.adverstir.preferences.AppPreferencesHelper;
 import com.project.adverstir.ui.symptoms.SymptomDbModel;
@@ -76,6 +79,7 @@ public class MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
         ((MainActivity) getActivity()).getSupportActionBar().setShowHideAnimationEnabled(false);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         ((MainActivity) getActivity()).getSupportActionBar().hide();
@@ -215,6 +219,10 @@ public class MainFragment extends Fragment {
         initDataStorageLengthUI();
 
         return view;
+
+
+
+
     }
 
     public void initDataStorageLengthUI() {

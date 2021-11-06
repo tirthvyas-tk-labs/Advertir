@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111">
+
+    <ProgressBar
+        android:id="@+id/loading_circle"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminateTint="#EB5757"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/set_to_dimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="35dp"
+            android:text="Covid Stats"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/search_ic"
+            android:drawablePadding="10dp"
+            android:hint="Country Name"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#99FFFFFF"
+            android:inputType="textFilter"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country"/>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Active cases -->
+                <View
+                    android:id="@+id/graph_new_cases"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/rounded_covid_info_in_location_card"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/graph_total_death"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/newcas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/trend_up"
+                    android:text="Active cases"
+                    android:textColor="#999999"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_new_cases"
+                    app:layout_constraintEnd_toEndOf="@id/graph_new_cases"
+                    app:layout_constraintStart_toStartOf="@id/graph_new_cases"
+                    app:layout_constraintTop_toTopOf="@id/graph_new_cases"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_new_cases"
+                    app:layout_constraintEnd_toEndOf="@id/graph_new_cases"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/graph_new_cases"
+                    app:layout_constraintTop_toTopOf="@id/graph_new_cases"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/active_cases_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_cases_graph"
+                    app:layout_constraintBottom_toBottomOf="@+id/graph_new_cases"
+                    app:layout_constraintEnd_toEndOf="@+id/graph_new_cases"
+                    app:layout_constraintStart_toStartOf="@+id/graph_new_cases"
+                    app:layout_constraintTop_toTopOf="@+id/graph_new_cases"
+                    app:layout_constraintVertical_bias="0.75"/>
+
+                <!-- Total death -->
+                <View
+                    android:id="@+id/graph_total_death"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/rounded_covid_info_in_location_card"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintLeft_toRightOf="@+id/graph_new_cases"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/totdea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/trend_up"
+                    android:text="Total death"
+                    android:textColor="#999999"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_total_death"
+                    app:layout_constraintEnd_toEndOf="@id/graph_total_death"
+                    app:layout_constraintStart_toStartOf="@id/graph_total_death"
+                    app:layout_constraintTop_toTopOf="@id/graph_total_death"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <TextView
+                    android:id="@+id/result2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#EB5757"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_total_death"
+                    app:layout_constraintEnd_toEndOf="@id/graph_total_death"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/graph_total_death"
+                    app:layout_constraintTop_toTopOf="@id/graph_total_death"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <ImageView
+                    android:id="@+id/total_death_image"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/total_death_graph"
+                    app:layout_constraintBottom_toBottomOf="@+id/graph_total_death"
+                    app:layout_constraintEnd_toEndOf="@+id/graph_total_death"
+                    app:layout_constraintStart_toStartOf="@+id/graph_total_death"
+                    app:layout_constraintTop_toTopOf="@+id/graph_total_death"
+                    app:layout_constraintVertical_bias="0.75"/>
+
+
+                <!-- Fully vaccinated -->
+                <View
+                    android:id="@+id/graph_full_vaccinated"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/rounded_covid_info_in_location_card"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/graph_new_death"
+                    app:layout_constraintTop_toBottomOf="@+id/graph_new_cases"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/result4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#EB5757"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_full_vaccinated"
+                    app:layout_constraintEnd_toEndOf="@id/graph_full_vaccinated"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/graph_full_vaccinated"
+                    app:layout_constraintTop_toTopOf="@id/graph_full_vaccinated"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/totalvaccinations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/trend_up"
+                    android:text="Fully vaccinated"
+                    android:textColor="#999999"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_full_vaccinated"
+                    app:layout_constraintEnd_toEndOf="@id/graph_full_vaccinated"
+                    app:layout_constraintStart_toStartOf="@id/graph_full_vaccinated"
+                    app:layout_constraintTop_toTopOf="@id/graph_full_vaccinated"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <ImageView
+                    android:id="@+id/fully_vaccinated_image"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/total_death_graph"
+                    app:layout_constraintBottom_toBottomOf="@+id/graph_full_vaccinated"
+                    app:layout_constraintEnd_toEndOf="@+id/graph_full_vaccinated"
+                    app:layout_constraintStart_toStartOf="@+id/graph_full_vaccinated"
+                    app:layout_constraintTop_toTopOf="@+id/graph_full_vaccinated"
+                    app:layout_constraintVertical_bias="0.75"/>
+
+                <!-- New death -->
+                <View
+                    android:id="@+id/graph_new_death"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/rounded_covid_info_in_location_card"
+                    app:layout_constraintHorizontal_bias="0.905"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintLeft_toRightOf="@+id/graph_full_vaccinated"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/graph_total_death"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/newdeaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/trend_up"
+                    android:text="New deaths"
+                    android:textColor="#999999"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_new_death"
+                    app:layout_constraintEnd_toEndOf="@id/graph_new_death"
+                    app:layout_constraintStart_toStartOf="@id/graph_new_death"
+                    app:layout_constraintTop_toTopOf="@id/graph_new_death"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <TextView
+                    android:id="@+id/result3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/graph_new_death"
+                    app:layout_constraintEnd_toEndOf="@id/graph_new_death"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/graph_new_death"
+                    app:layout_constraintTop_toTopOf="@id/graph_new_death"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <ImageView
+                    android:id="@+id/new_death_image"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_cases_graph"
+                    app:layout_constraintBottom_toBottomOf="@+id/graph_new_death"
+                    app:layout_constraintEnd_toEndOf="@+id/graph_new_death"
+                    app:layout_constraintStart_toStartOf="@+id/graph_new_death"
+                    app:layout_constraintTop_toTopOf="@+id/graph_new_death"
+                    app:layout_constraintVertical_bias="0.75"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <!-- nav bar -->
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#26FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnProfile"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flag_transparent"
+            android:drawableTop="@drawable/profile_ic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btnCovid"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintRight_toRightOf="@id/view"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginStart="10dp"
+            android:drawableTop="@drawable/home_ic"
+            android:background="@drawable/flag_transparent"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintLeft_toLeftOf="@id/view"
+            app:layout_constraintRight_toLeftOf="@id/btnExplore"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/view"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnExplore"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flag_transparent"
+            android:drawableTop="@drawable/explore_ic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="COVID Warn"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintRight_toLeftOf="@id/btnCovid"
+            app:layout_constraintStart_toEndOf="@+id/btnHome"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/view"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCovid"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flag_transparent"
+            android:drawableTop="@drawable/covid_ic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Stats"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/btnExplore"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintRight_toLeftOf="@id/btnProfile"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,13 +12,13 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:text="@string/app_name_one_line"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/xall"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV205"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -98,7 +98,6 @@
                 android:minHeight="44dp"
                 android:alpha="0"
                 android:src="@drawable/ring"
-                android:tint="#000000"
                 app:layout_constraintBottom_toTopOf="@+id/broadcastTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -164,5 +163,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent=".95" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

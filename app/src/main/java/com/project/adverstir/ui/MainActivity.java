@@ -14,17 +14,20 @@ import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.DatePicker;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adverstir.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.project.adverstir.Travel_MainActivity;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 
 import java.util.Calendar;
@@ -63,6 +66,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     Activity activity;
+    Button back_button;
     Context cxt;
 
     @Override
@@ -96,6 +100,14 @@ public class MainActivity extends AppCompatActivity {
         Constants.HistoryAdapter = new HistoryRecyclerViewAdapter(this,this);
 
         Utils.minApiCheck(this);
+
+        back_button = findViewById(R.id.back_button);
+        back_button.setOnClickListener(v -> {
+            Intent nav_to_profile = new Intent(MainActivity.this, Travel_MainActivity.class);
+            startActivity(nav_to_profile);
+            finish();
+        });
+
     }
 
     @Override
@@ -107,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         PermissionLogic.permissionLogic(requestCode, permissions, grantResults, this);
     }
 

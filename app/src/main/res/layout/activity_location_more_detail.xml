@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/india_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:background="@drawable/rounded_more_detail_about_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/flag_transparent"
+        android:src="@drawable/ic_go_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/location_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/location_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/location_ic"
+        android:text="Place"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_country"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/desc_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="0.0/5"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/star_ic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toEndOf="@+id/location_place"
+        app:layout_constraintTop_toBottomOf="@+id/location_country" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        app:layout_constraintVertical_bias="0.25">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/travel_restriction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/two_section_interchangable_effect"
+            android:text="TRAVEL RESTRICTION"
+            android:textColor="#EB5757"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/covid_info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/covid_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flag_transparent"
+            android:text="COVID INFO"
+            android:textColor="#BFBFBF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintLeft_toRightOf="@+id/travel_restriction"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/scrollview_1"
+        android:layout_width="417dp"
+        android:layout_height="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.011">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_desc_long_travel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Travel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas sed tempus. Mi bibendum neque egestas congue quisque egestas diam. Quam pellentesque nec nam aliquam sem. Nibh sit amet commodo nulla facilisi. Fames ac turpis egestas integer. Erat imperdiet sed euismod nisi. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Quis varius quam quisque id. Sagittis eu volutpat odio facilisis mauris sit amet massa.
+Egestas fringilla phasellus faucibus scelerisque. Dui sapien eget mi proin sed libero enim sed. Ut venenatis tellus in metus vulputate eu scelerisque. Mattis rhoncus urna neque viverra justo nec. Quam vulputate dignissim suspendisse in est ante in. Lorem ipsum dolor sit amet consectetur adipiscing elit. Egestas pretium aenean pharetra magna. Vel turpis nunc eget lorem dolor sed viverra. Et pharetra pharetra massa massa ultricies mi quis. Nec ullamcorper sit amet risus. Semper viverra nam libero justo laoreet sit amet cursus. Lacus vel facilisis volutpat est velit. Tempus quam pellentesque nec nam aliquam sem et tortor. Tempus egestas sed sed risus pretium quam. Sit amet volutpat consequat mauris nunc congue nisi vitae. Sit amet porttitor eget dolor morbi non arcu risus. Id aliquet risus feugiat in. A diam maecenas sed enim ut sem viverra aliquet. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Orci nulla pellentesque dignissim enim sit amet venenatis.
+Sem et tortor consequat id porta nibh venenatis cras sed. Rhoncus dolor purus non enim praesent elementum facilisis. Tortor at auctor urna nunc id cursus metus aliquam. Aliquet enim tortor at auctor urna nunc. Proin nibh nisl condimentum id venenatis a condimentum. Mauris augue neque gravida in. Fringilla phasellus faucibus scelerisque eleifend donec. Et odio pellentesque diam volutpat commodo sed egestas egestas. Viverra mauris in aliquam sem fringilla ut. Volutpat maecenas volutpat blandit aliquam etiam erat. Tellus cras adipiscing enim eu turpis egestas. In egestas erat imperdiet sed euismod nisi. Ultrices gravida dictum fusce ut placerat orci.
+Faucibus in ornare quam viverra orci sagittis eu. Varius quam quisque id diam vel. Ut lectus arcu bibendum at. Aliquet nibh praesent tristique magna sit. Libero volutpat sed cras ornare arcu dui vivamus arcu. Vulputate dignissim suspendisse in est ante in nibh. Tempor orci dapibus ultrices in iaculis nunc. Lectus arcu bibendum at varius. Nec dui nunc mattis enim ut tellus elementum sagittis. Consequat nisl vel pretium lectus.
+Hendrerit dolor magna eget est lorem. Ultrices in iaculis nunc sed augue lacus viverra. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Felis donec et odio pellentesque diam volutpat commodo sed. Pulvinar neque laoreet suspendisse interdum consectetur libero. Auctor urna nunc id cursus metus aliquam eleifend. Faucibus turpis in eu mi bibendum neque egestas congue. Aliquam nulla facilisi cras fermentum odio eu. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Porta nibh venenatis cras sed felis eget. Pellentesque habitant morbi tristique senectus et. Eget sit amet tellus cras.
+Viverra accumsan in nisl nisi scelerisque. Semper quis lectus nulla at volutpat diam ut. Faucibus pulvinar elementum integer enim neque volutpat ac. Tortor posuere ac ut consequat. Et ultrices neque ornare aenean euismod. Quis eleifend quam adipiscing vitae. Urna cursus eget nunc scelerisque viverra. Felis eget nunc lobortis mattis aliquam faucibus. Sagittis id consectetur purus ut. Et tortor consequat id porta. Aliquet bibendum enim facilisis gravida. Orci nulla pellentesque dignissim enim. Nam libero justo laoreet sit amet.
+Orci sagittis eu volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nec nam aliquam sem et tortor consequat id porta nibh. Est placerat in egestas erat imperdiet sed euismod nisi. Ut consequat semper viverra nam libero justo laoreet sit. Turpis in eu mi bibendum neque egestas congue. Gravida quis blandit turpis cursus in hac. Eget aliquet nibh praesent tristique magna sit amet. Ut aliquam purus sit amet luctus venenatis lectus. Tortor posuere ac ut consequat.
+Malesuada fames ac turpis egestas. Consequat semper viverra nam libero justo. Leo urna molestie at elementum eu facilisis sed. Ullamcorper eget nulla facilisi etiam dignissim diam quis. Volutpat ac tincidunt vitae semper quis lectus nulla at. Montes nascetur ridiculus mus mauris vitae ultricies leo. Nulla at volutpat diam ut. Magna fermentum iaculis eu non diam phasellus. Non odio euismod lacinia at quis risus sed. Quis enim lobortis scelerisque fermentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Quis enim lobortis scelerisque fermentum. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit.
+In arcu cursus euismod quis viverra nibh. A cras semper auctor neque vitae tempus quam. Amet consectetur adipiscing elit pellentesque habitant. Ac tortor dignissim convallis aenean et tortor at risus. Lacinia at quis risus sed vulputate. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Diam donec adipiscing tristique risus nec. Aliquam sem et tortor consequat id porta nibh venenatis. Odio aenean sed adipiscing diam donec adipiscing tristique. Euismod lacinia at quis risus sed vulputate. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Pellentesque elit eget gravida cum sociis natoque penatibus et.
+Enim nunc faucibus a pellentesque sit amet porttitor eget. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Massa tincidunt dui ut ornare lectus sit. Natoque penatibus et magnis dis parturient. Eleifend donec pretium vulputate sapien. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Feugiat nibh sed pulvinar proin. Eros in cursus turpis massa. Arcu bibendum at varius vel. Enim praesent elementum facilisis leo vel fringilla. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget mi proin sed libero enim. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_booking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_button"
+                android:padding="10dp"
+                android:text="Start Booking"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/text_desc_long_travel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/scrollview_2"
+        android:layout_width="417dp"
+        android:layout_height="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.011">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <View
+                android:id="@+id/graph_new_cases"
+                android:layout_margin="30dp"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:background="@drawable/rounded_covid_info_in_location_card"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/graph_total_death"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <View
+                android:id="@+id/graph_total_death"
+                android:layout_margin="30dp"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:background="@drawable/rounded_covid_info_in_location_card"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="5"
+                app:layout_constraintLeft_toRightOf="@+id/graph_new_cases"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active cases"
+                android:drawableRight="@drawable/trend_up"
+                android:textColor="#999999"
+                app:layout_constraintBottom_toBottomOf="@id/graph_new_cases"
+                app:layout_constraintEnd_toEndOf="@id/graph_new_cases"
+                app:layout_constraintStart_toStartOf="@id/graph_new_cases"
+                app:layout_constraintTop_toTopOf="@id/graph_new_cases"
+                app:layout_constraintVertical_bias="0.1"/>
+
+            <TextView
+                android:id="@+id/covid_new_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/graph_new_cases"
+                app:layout_constraintEnd_toEndOf="@id/graph_new_cases"
+                app:layout_constraintStart_toStartOf="@id/graph_new_cases"
+                app:layout_constraintTop_toTopOf="@id/graph_new_cases"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Death"
+                android:drawableRight="@drawable/trend_up"
+                android:textColor="#999999"
+                app:layout_constraintBottom_toBottomOf="@+id/graph_total_death"
+                app:layout_constraintEnd_toEndOf="@+id/graph_total_death"
+                app:layout_constraintStart_toStartOf="@+id/graph_total_death"
+                app:layout_constraintTop_toTopOf="@+id/graph_total_death"
+                app:layout_constraintVertical_bias="0.1"/>
+
+            <TextView
+                android:id="@+id/covid_total_death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18dp"
+                android:textColor="#EB5757"
+                app:layout_constraintBottom_toBottomOf="@+id/graph_total_death"
+                app:layout_constraintEnd_toEndOf="@+id/graph_total_death"
+                app:layout_constraintStart_toStartOf="@+id/graph_total_death"
+                app:layout_constraintTop_toTopOf="@+id/graph_total_death"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/new_cases_graph"
+                app:layout_constraintBottom_toBottomOf="@+id/graph_new_cases"
+                app:layout_constraintEnd_toEndOf="@+id/graph_new_cases"
+                app:layout_constraintStart_toStartOf="@+id/graph_new_cases"
+                app:layout_constraintTop_toTopOf="@+id/graph_new_cases"
+                app:layout_constraintVertical_bias="0.75"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/total_death_graph"
+                app:layout_constraintBottom_toBottomOf="@+id/graph_total_death"
+                app:layout_constraintEnd_toEndOf="@+id/graph_total_death"
+                app:layout_constraintStart_toStartOf="@+id/graph_total_death"
+                app:layout_constraintTop_toTopOf="@+id/graph_total_death"
+                app:layout_constraintVertical_bias="0.75"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
