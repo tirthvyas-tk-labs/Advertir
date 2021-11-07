@@ -38,6 +38,8 @@ gradlew install
 ## Screenshots of Application
 <img src="https://github.com/MwangiR/advertir-login/blob/master/readme_images/Screenshot_1636114577.png" width="30%" height="30%"/> <img src="https://github.com/MwangiR/advertir-login/blob/master/readme_images/Screenshot_1636114686.png" width="30%" height="30%"/> <img src="https://github.com/MwangiR/advertir-login/blob/master/readme_images/Screenshot_1636114702.png" width="30%" height="30%"/> 
 
+<img src="https://github.com/tirthvyas-tk-labs/Advertir/blob/main/phoness1.PNG" width="30%" height="30%"/><img src="https://github.com/tirthvyas-tk-labs/Advertir/blob/main/phoness2.PNG" width="30%" height="30%"/><img src="https://github.com/tirthvyas-tk-labs/Advertir/blob/main/phoness3.PNG" width="30%" height="30%"/><img src="https://github.com/tirthvyas-tk-labs/Advertir/blob/main/phoness4.PNG" width="30%" height="30%"/> 
+
 ## Contributing
 
 1. Fork it
