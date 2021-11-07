@@ -28,7 +28,7 @@ import com.example.adverstir.R;
 public class ProfileActivity extends AppCompatActivity {
 
     AppCompatButton btnLogout;
-    AppCompatTextView tvName, tvMobile, tvEmail;
+    AppCompatTextView tvName, tvMobile, tvEmail,tvName2;
     ImageView btnGoBack;
     SharedPreferences sharedPreferences;
 
@@ -60,9 +60,11 @@ public class ProfileActivity extends AppCompatActivity {
         tvName = findViewById(R.id.tvName);
         tvMobile = findViewById(R.id.tvMobile);
         tvEmail = findViewById(R.id.tvEmail);
+        tvName2 = findViewById(R.id.tvName2);
         tvName.setText("Username: " + sharedPreferences.getString(Name, "0"));
         tvMobile.setText("Mobile Number: " + sharedPreferences.getString(Mobile, "0"));
         tvEmail.setText("Email: " + sharedPreferences.getString(Email, "0"));
+        tvName2.setText("Vaccination Status: Yes");
 
 
         // Logout

@@ -129,6 +129,8 @@ public class Constants {
     public static UUID CHARACTERISTIC_UUID = UUID.fromString("d945590b-5b09-4144-ace7-4063f95bd0bb");
     public static UUID BEACON_SERVICE_UUID = UUID.fromString("0000D028-0000-1000-8000-00805F9B34FB");
     public static UUID contactUUID = null;
+    public static String API_KEY = "be0ee92";
+
 
     public static String GOOGLE_SIGNIN_PAGE = "https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin";
     public static String GOOGLE_DOWNLOAD_PAGE = "https://myaccount.google.com/?utm_source=sign_in_no_continue";

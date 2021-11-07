@@ -14,6 +14,7 @@ import com.example.adverstir.R;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.List;
 
 import com.project.adverstir.gps.GpsDbRecordRepository;
@@ -187,15 +188,22 @@ public class SendInfectedUserData extends AsyncTask<Void, Void, Void> {
     }
 
     public void sendRequest(String seed, long ts_start, long ts_end, double lat, double longi, int precision) {
+
         if (ts_start > ts_end) {
             ts_end = ts_start;
+        }
+
+        String uuid = null;
+        String uuidParam = "uuid=" + seed + "&key=" + Constants.API_KEY;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            uuid = Base64.getEncoder().encodeToString(uuidParam.getBytes());
         }
 
         JSONObject announceRequestObj = null;
         try {
              announceRequestObj =
                      SelfReportRequest.toJson(new String[]{seed},
-                             new long[]{ts_start}, new long[]{ts_end}, lat, longi, precision);
+                             new long[]{ts_start}, new long[]{ts_end},uuid, lat, longi, precision);
         }
         catch(Exception e) {
             Log.e("err",e.getMessage());
