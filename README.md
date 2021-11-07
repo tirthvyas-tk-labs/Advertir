@@ -1,4 +1,4 @@
-# Advertir-login
+# Advertir
 
 [![Android CI](https://github.com/MwangiR/advertir-login/actions/workflows/main.yml/badge.svg)](https://github.com/MwangiR/advertir-login/actions/workflows/main.yml) [![CodeQL](https://github.com/MwangiR/advertir-login/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MwangiR/advertir-login/actions/workflows/codeql-analysis.yml) [![Snyk](https://github.com/yogeshvar/advertir-login/actions/workflows/snyk.yml/badge.svg)](https://github.com/yogeshvar/advertir-login/actions/workflows/snyk.yml)
 
