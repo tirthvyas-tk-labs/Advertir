@@ -7,7 +7,7 @@ Mobile travel application that provide user the ability to book travel ticket an
 ## Installation
 Clone this repository and import into **Android Studio**
 ```bash
-git clone https://github.com/MwangiR/advertir-login
+git clone https://github.com/tirthvyas-tk-labs/Advertir.git
 ```
 
 ## Instructions to run the app (Method 1)
@@ -28,6 +28,12 @@ gradlew install
 - Google authentication 
 - Covid Stats 
 - Clickable location cards with description
+
+## Covid Contact Tracing
+-Get exposure notification
+-Symptom tracker
+-Location-based logs
+
 
 ## Screenshots of Application
 <img src="https://github.com/MwangiR/advertir-login/blob/master/readme_images/Screenshot_1636114577.png" width="30%" height="30%"/> <img src="https://github.com/MwangiR/advertir-login/blob/master/readme_images/Screenshot_1636114686.png" width="30%" height="30%"/> <img src="https://github.com/MwangiR/advertir-login/blob/master/readme_images/Screenshot_1636114702.png" width="30%" height="30%"/> 
