@@ -30,9 +30,9 @@ gradlew install
 - Clickable location cards with description
 
 ## Covid Contact Tracing
--Get exposure notification
--Symptom tracker
--Location-based logs
+- Get exposure notification
+- Symptom tracker
+- Location-based logs
 
 
 ## Screenshots of Application
