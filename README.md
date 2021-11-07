@@ -1,6 +1,6 @@
 # Advertir
 
-[![Android CI](https://github.com/MwangiR/advertir-login/actions/workflows/main.yml/badge.svg)](https://github.com/MwangiR/advertir-login/actions/workflows/main.yml) [![CodeQL](https://github.com/MwangiR/advertir-login/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/MwangiR/advertir-login/actions/workflows/codeql-analysis.yml) [![Snyk](https://github.com/yogeshvar/advertir-login/actions/workflows/snyk.yml/badge.svg)](https://github.com/yogeshvar/advertir-login/actions/workflows/snyk.yml)
+[![Android CI](https://github.com/tirthvyas-tk-labs/Advertir/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/tirthvyas-tk-labs/Advertir/actions/workflows/main.yml) [![CodeQL](https://github.com/tirthvyas-tk-labs/Advertir/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/tirthvyas-tk-labs/Advertir/actions/workflows/codeql.yml) [![Snyk](https://github.com/tirthvyas-tk-labs/Advertir/actions/workflows/snyk.yml/badge.svg?branch=main)](https://github.com/tirthvyas-tk-labs/Advertir/actions/workflows/snyk.yml)
 
 Mobile travel application that provide user the ability to book travel ticket and obtain covid information in countries around the world.
 
