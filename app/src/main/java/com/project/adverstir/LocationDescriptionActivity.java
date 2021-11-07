@@ -1,13 +1,19 @@
 package com.project.adverstir;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -20,6 +26,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.security.GeneralSecurityException;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -34,6 +41,7 @@ public class LocationDescriptionActivity extends AppCompatActivity {
     TextView location_country, location_place, star_rating, new_covid_cases, total_death_covid;
     AppCompatButton covid_info, travel_restriction;
     ScrollView travel_scroll, covid_scroll;
+    Button booking_button;
 
     private SharedPreferences getEncryptedSharedPrefs() {
         try {
@@ -52,6 +60,8 @@ public class LocationDescriptionActivity extends AppCompatActivity {
         }
         return null;
     }
+
+    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +88,6 @@ public class LocationDescriptionActivity extends AppCompatActivity {
         close_button.setOnClickListener(v -> {
             finish();
         });
-
         // Fetch covid data API
         fetchData();
 
@@ -108,7 +117,6 @@ public class LocationDescriptionActivity extends AppCompatActivity {
             covid_scroll.setVisibility(View.INVISIBLE);
         });
     }
-
     // Get new cases and total deaths of covid
     private void fetchData() {
 
@@ -154,7 +162,6 @@ public class LocationDescriptionActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
 }

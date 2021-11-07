@@ -24,6 +24,9 @@
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
 
+
+
+
     <application
         android:name="com.project.adverstir.CovidSafeApplication"
         android:allowBackup="true"
@@ -36,8 +39,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
-
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <activity
             android:windowSoftInputMode="adjustPan|stateHidden"
